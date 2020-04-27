@@ -1,15 +1,17 @@
 {
   "main": {
     "extraEntries": [
-      "@/preload.js"
+      "@/static/preload/index.ts"
     ],
-    "sourceDirectory": "src/main"
+    "sourceDirectory": "src/main",
+    "webpackConfig": "build/webpack.main.config.js"
   },
   "renderer": {
     "dll": [
       "fooModule"
     ],
     "sourceDirectory": "src/renderer",
-    "template": "src/renderer/index.html"
+    "template": "src/renderer/index.html",
+    "webpackConfig": "build/webpack.renderer.config.js"
   }
 }

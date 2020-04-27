@@ -10,7 +10,14 @@ let mainWindow: any
 app.allowRendererProcessReuse = true
 
 function createMainWindow() {
-  const window = new BrowserWindow({webPreferences: {nodeIntegration: true}})
+  const window = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true,
+      preload: path.resolve(__static, 'preload/index.ts')
+    }
+  })
+
+  console.log(process.env.ELECTRON_WEBPACK_WDS_PORT)
 
   if (isDevelopment) {
     window.webContents.openDevTools()
