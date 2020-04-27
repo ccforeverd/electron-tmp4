@@ -1,0 +1,15 @@
+{
+  "main": {
+    "extraEntries": [
+      "@/preload.js"
+    ],
+    "sourceDirectory": "src/main"
+  },
+  "renderer": {
+    "dll": [
+      "fooModule"
+    ],
+    "sourceDirectory": "src/renderer",
+    "template": "src/renderer/index.html"
+  }
+}
