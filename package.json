@@ -9,22 +9,26 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
-    "@types/node": "^13.13.4",
-    "@types/react": "^16.9.34",
-    "@types/react-dom": "^16.9.6",
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "source-map-support": "^0.5.19",
+    "typeface-roboto": "^0.0.75",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.9.4",
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
     "electron": "8.2.3",
     "electron-builder": "^22.5.1",
     "electron-webpack": "^2.8.2",
     "electron-webpack-eslint": "^6.0.0",
     "electron-webpack-ts": "^4.0.1",
+    "source-map-support": "^0.5.19",
     "webpack": "~4.43.0"
   }
 }

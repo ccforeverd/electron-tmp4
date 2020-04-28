@@ -1,7 +1,7 @@
 {
   "main": {
     "extraEntries": [
-      "@/static/preload/index.ts"
+      "@/preload/index.js"
     ],
     "sourceDirectory": "src/main",
     "webpackConfig": "build/webpack.main.config.js"

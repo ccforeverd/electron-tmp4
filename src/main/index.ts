@@ -13,11 +13,9 @@ function createMainWindow() {
   const window = new BrowserWindow({
     webPreferences: {
       nodeIntegration: true,
-      preload: path.resolve(__static, 'preload/index.ts')
+      preload: path.resolve(__dirname, '../preload/index.js')
     }
   })
-
-  console.log(process.env.ELECTRON_WEBPACK_WDS_PORT)
 
   if (isDevelopment) {
     window.webContents.openDevTools()
