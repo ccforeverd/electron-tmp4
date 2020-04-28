@@ -7,7 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-interface tabPanelProps {
+interface TabPanelProps {
   // children: PropTypes.node,
   // index: PropTypes.any.isRequired,
   // value: PropTypes.any.isRequired,
@@ -16,7 +16,7 @@ interface tabPanelProps {
   value: number,
 }
 
-function TabPanel(props: tabPanelProps) {
+function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
   return (
@@ -50,6 +50,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
 }));
+
+interface ScrollableTabsButtonAutoData {
+  title?: string,
+  url: string
+}
+interface ScrollableTabsButtonAutoProps {
+  data: Array<ScrollableTabsButtonAutoData>
+}
 
 function ScrollableTabsButtonAuto() {
   const classes = useStyles();
