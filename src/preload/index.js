@@ -1,1 +1,4 @@
-console.log(111)
+
+require('./html2pdf.ts')
+
+console.log(222)
